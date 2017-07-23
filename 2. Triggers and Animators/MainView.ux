@@ -1,0 +1,22 @@
+<App>
+
+	<DockPanel>
+		<StatusBarBackground DockPanel.Dock="Top" />
+
+		<StackPanel Orientation="Horizontal">
+
+			<Rectangle Width="100" Height="100" Fill="#000" CornerRadius="10">
+				<WhileHovering>
+				<!-- <WhilePressed> -->
+ 					<Scale Factor="1.5" Duration=".25" EasingBack="BounceIn" DurationBack="1.0" />
+<!-- 					<Rotate Degrees="45" Duration=".2"/> -->
+					<!-- <Move X="50" Y="-20" /> -->
+<!-- 				</WhilePressed> -->
+				</WhileHovering>
+			</Rectangle>
+			<Rectangle ux:Name="GrayRectangle" Width="100" Height="100" Fill="#ccc" CornerRadius="10,0,0,0" />
+
+		</StackPanel>
+	</DockPanel>
+
+</App>

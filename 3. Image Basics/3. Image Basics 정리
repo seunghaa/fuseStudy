@@ -1,0 +1,58 @@
+#### 3. Image Basics
+---
+##### Img를 file 또는 url을 이용하여 보이는 법
+```erb
+<StackPanel>
+    <Image File="some_file.png" />
+    <Image Url=D:\건대멋사\fusestudy\3. Image Basics\3. Image Basics"some_url" />
+</StackPanel>
+```
+##### 여러개의 Img를 보이는 법
+- file을 이용
+```erb
+<StackPanel>
+    <Image Files="logo.png, logo@2x.png, logo@4x.png" />
+    <Image>
+        <MultiDensityImageSource>
+            <FileImageSource Density="1" File="logo.png" />
+            <FileImageSource Density="2" File="logo@2x.png" />
+            <FileImageSource Density="3" File="logo@4x.png" />
+        </MultiDensityImageSource>
+    </Image>
+</StackPanel/>
+```
+
+- url을 이용
+```erb
+<StackPanel>
+    <Image>
+        <MultiDensityImageSource>
+            <HttpImageSource Density="1" Url="..." />
+            <HttpImageSource Density="2" Url="...@2x" />
+            <HttpImageSource Density="3" Url="...@4x" />
+        </MultiDensityImageSource>
+    </Image>
+</StackPanel>
+```
+
+#### 수업 코드
+```erb
+<App>
+	<DockPanel>
+		<StatusBarBackground Dock="Top" />
+		<BottomBarBackground Dock="Bottom" />
+
+		<!-- Image File="Assets/lion.png" StretchMode="PointPrecise" StretchDirection="UpOnly"/> -->
+<!-- 	<Image Url="https://i.ytimg.com/vi/3LpYeK_F5Bk/maxresdefault.jpg"/> -->
+	 	<Image Width="256" Height="128">
+	 		<MultiDensityImageSource>
+				<FileImageSource File="Assets/lion.png" Density="1" />
+			</MultiDensityImageSource>
+		</Image>
+	</DockPanel>
+</App>
+```
+
+#### 참조링크
+- [fuse tutorial 3 ](https://www.youtube.com/watch?v=d5lA0yyq9g0&list=PLdlqWm6b-XALJgM3fGa4q95Yipsgb8Q1o&index=3)
+- [fuse 공식문서 ](https://www.fusetools.com/docs/fuse/controls/image)

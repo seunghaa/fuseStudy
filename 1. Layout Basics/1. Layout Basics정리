@@ -1,0 +1,25 @@
+#### 1. Layout Basics
+---
+##### 수업 소스
+```erb
+<App>
+<!--  <StackPanel Orientation="Vertical" Padding="10" Margin="10">
+	<Text Alignment="Center" Margin="10">some text</Text> 
+	<Button Text="the button"/>
+	<Slider />
+	<Switch />
+ </StackPanel> -->
+
+<DockPanel Padding="10">
+	<Text Dock="Right">some text</Text> 
+	<Button Margin="10" Text="the button" Dock="Top"/>
+	<Slider />
+	<Switch />
+</DockPanel>
+</App>
+
+```
+#### 참조링크
+- [fuse tutorial 3 ](https://www.youtube.com/watch?v=2kdXnX1SjzU&index=1&list=PLdlqWm6b-XALJgM3fGa4q95Yipsgb8Q1o)
+- [fuse 공식문서 ](https://www.fusetools.com/docs/layout/layout)
+- [fuse 번역문서 ](https://wonhada.com/?docs=fusetools-docs/%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83)

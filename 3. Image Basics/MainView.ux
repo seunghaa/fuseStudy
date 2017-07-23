@@ -1,0 +1,14 @@
+<App>
+	<DockPanel>
+		<StatusBarBackground Dock="Top" />
+		<BottomBarBackground Dock="Bottom" />
+
+		<<!-- Image File="Assets/lion.png" StretchMode="PointPrecise" StretchDirection="UpOnly"/> -->
+<!-- 	<Image Url="https://i.ytimg.com/vi/3LpYeK_F5Bk/maxresdefault.jpg"/> -->
+	 	<Image Width="256" Height="128">
+	 		<MultiDensityImageSource>
+				<FileImageSource File="Assets/lion.png" Density="1" />
+			</MultiDensityImageSource>
+		</Image>
+	</DockPanel>
+</App>

@@ -1,0 +1,15 @@
+<App>
+<!--  <StackPanel Orientation="Vertical" Padding="10" Margin="10">
+	<Text Alignment="Center" Margin="10">some text</Text> 
+	<Button Text="the button"/>
+	<Slider />
+	<Switch />
+ </StackPanel> -->
+
+<DockPanel Padding="10">
+	<Text Dock="Right">some text</Text> 
+	<Button Margin="10" Text="the button" Dock="Top"/>
+	<Slider />
+	<Switch />
+</DockPanel>
+</App>

@@ -1,0 +1,33 @@
+#### 2. Triggers and Animators
+---
+##### 수업 소스
+```erb
+<App>
+
+	<DockPanel>
+		<StatusBarBackground DockPanel.Dock="Top" />
+
+		<StackPanel Orientation="Horizontal">
+
+			<Rectangle Width="100" Height="100" Fill="#000" CornerRadius="10">
+				<WhileHovering>
+				<!-- <WhilePressed> -->
+ 					<Scale Factor="1.5" Duration=".25" EasingBack="BounceIn" DurationBack="1.0" />
+<!-- 					<Rotate Degrees="45" Duration=".2"/> -->
+					<!-- <Move X="50" Y="-20" /> -->
+<!-- 				</WhilePressed> -->
+				</WhileHovering>
+			</Rectangle>
+			<Rectangle ux:Name="GrayRectangle" Width="100" Height="100" Fill="#ccc" CornerRadius="10,0,0,0" />
+
+		</StackPanel>
+	</DockPanel>
+
+</App>
+
+
+```
+#### 참조링크
+- [fuse tutorial 3 ](https://www.youtube.com/watch?v=bT1npBvXEzw&list=PLdlqWm6b-XALJgM3fGa4q95Yipsgb8Q1o&index=2)
+- [fuse 공식문서 ](https://www.fusetools.com/docs/fuse/triggers/trigger)
+- [fuse 번역문서 ](https://wonhada.com/?docs=fusetools-docs/%ED%8A%B8%EB%A6%AC%EA%B1%B0%EC%99%80-%EC%95%A0%EB%8B%88%EB%A9%94%EC%9D%B4%EC%85%98)
